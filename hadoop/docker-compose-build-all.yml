@@ -1,0 +1,17 @@
+version: '2'
+services:
+  os-jvm:
+    build: ./services/os-jvm-docker/centos6-openjdk8
+    image: joseangelramos/os-jvm:centos6-openjdk8
+
+  hadoop:
+    build: ./services/hadoop-docker/2.7.2
+    image: joseangelramos/hadoop:2.7.2
+
+  hive:
+    build: ./services/hive-docker/2.1.1
+    image: joseangelramos/hive:2.1.1
+
+  spark:
+    build: ./services/spark-docker/2.1.0
+    image: joseangelramos/spark:2.1.0
